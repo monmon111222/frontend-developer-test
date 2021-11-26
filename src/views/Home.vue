@@ -131,6 +131,8 @@
           class="col-sm-12 row justify-content-sm-between container-animation"
         >
           <div
+            v-for="(item, index) in ingradientList"
+            :key="index"
             class="
               col-sm-4
               row
@@ -140,209 +142,15 @@
             "
           >
             <div class="ingradient-items-vector-div">
-              <img src="../assets/leaf.png" />
+              <img :src="require('../assets/' + item.vector)" />
             </div>
             <div class="ingradient-items-title-div">
-              <span class="ingradient-items-title-span">UX Design</span>
+              <span class="ingradient-items-title-span">{{ item.title }}</span>
             </div>
             <span class="ingradient-items-content-span"
-              >Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
-              ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
-              porta. Nam condimentum vitae ligula vel ornare.</span
+              >{{ item.content }}.</span
             >
 
-            <button class="ingradient-items-btn">
-              <span>VIEW MORE</span>
-            </button>
-          </div>
-          <div
-            class="
-              col-sm-4
-              row
-              no-gutters
-              align-items-center
-              ingradient-items-div
-            "
-          >
-            <div class="ingradient-items-vector-div">
-              <img src="../assets/tomato.png" />
-            </div>
-            <div class="ingradient-items-title-div">
-              <span class="ingradient-items-title-span">UI Design</span>
-            </div>
-            <span class="ingradient-items-content-span"
-              >Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
-              ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
-              porta. Nam condimentum vitae ligula vel ornare.</span
-            ><button class="ingradient-items-btn">
-              <span>VIEW MORE</span>
-            </button>
-          </div>
-          <div
-            class="
-              col-sm-4
-              row
-              no-gutters
-              align-items-center
-              ingradient-items-div
-            "
-          >
-            <div class="ingradient-items-vector-div">
-              <img src="../assets/cheese.png" />
-            </div>
-            <div class="ingradient-items-title-div">
-              <span class="ingradient-items-title-span"
-                >website development</span
-              >
-            </div>
-            <span class="ingradient-items-content-span"
-              >Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
-              ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
-              porta. Nam condimentum vitae ligula vel ornare.</span
-            ><button class="ingradient-items-btn">
-              <span>VIEW MORE</span>
-            </button>
-          </div>
-          <div
-            class="
-              col-sm-4
-              row
-              no-gutters
-              align-items-center
-              ingradient-items-div
-            "
-          >
-            <div class="ingradient-items-vector-div">
-              <img src="../assets/crumber.png" />
-            </div>
-            <div class="ingradient-items-title-div">
-              <span class="ingradient-items-title-span"
-                >mobile app development</span
-              >
-            </div>
-            <span class="ingradient-items-content-span"
-              >Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
-              ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
-              porta. Nam condimentum vitae ligula vel ornare.</span
-            ><button class="ingradient-items-btn">
-              <span>VIEW MORE</span>
-            </button>
-          </div>
-          <div
-            class="
-              col-sm-4
-              row
-              no-gutters
-              align-items-center
-              ingradient-items-div
-            "
-          >
-            <div class="ingradient-items-vector-div">
-              <img src="../assets/orange.png" />
-            </div>
-            <div class="ingradient-items-title-div">
-              <span class="ingradient-items-title-span">ecommerce</span>
-            </div>
-            <span class="ingradient-items-content-span"
-              >Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
-              ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
-              porta. Nam condimentum vitae ligula vel ornare.</span
-            ><button class="ingradient-items-btn">
-              <span>VIEW MORE</span>
-            </button>
-          </div>
-          <div
-            class="
-              col-sm-4
-              row
-              no-gutters
-              align-items-center
-              ingradient-items-div
-            "
-          >
-            <div class="ingradient-items-vector-div">
-              <img src="../assets/kiwi.png" />
-            </div>
-            <div class="ingradient-items-title-div">
-              <span class="ingradient-items-title-span">customer loyalty</span>
-            </div>
-            <span class="ingradient-items-content-span"
-              >Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
-              ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
-              porta. Nam condimentum vitae ligula vel ornare.</span
-            ><button class="ingradient-items-btn">
-              <span>VIEW MORE</span>
-            </button>
-          </div>
-          <div
-            class="
-              col-sm-4
-              row
-              no-gutters
-              align-items-center
-              ingradient-items-div
-            "
-          >
-            <div class="ingradient-items-vector-div">
-              <img src="../assets/watermelon.png" />
-            </div>
-            <div class="ingradient-items-title-div">
-              <span class="ingradient-items-title-span"
-                >digital transformation</span
-              >
-            </div>
-            <span class="ingradient-items-content-span"
-              >Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
-              ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
-              porta. Nam condimentum vitae ligula vel ornare.</span
-            ><button class="ingradient-items-btn">
-              <span>VIEW MORE</span>
-            </button>
-          </div>
-          <div
-            class="
-              col-sm-4
-              row
-              no-gutters
-              align-items-center
-              ingradient-items-div
-            "
-          >
-            <div class="ingradient-items-vector-div">
-              <img src="../assets/corn.png" />
-            </div>
-            <div class="ingradient-items-title-div">
-              <span class="ingradient-items-title-span">digital marketing</span>
-            </div>
-            <span class="ingradient-items-content-span"
-              >Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
-              ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
-              porta. Nam condimentum vitae ligula vel ornare.</span
-            >
-            <button class="ingradient-items-btn">
-              <span>VIEW MORE</span>
-            </button>
-          </div>
-          <div
-            class="
-              col-sm-4
-              row
-              no-gutters
-              align-items-center
-              ingradient-items-div
-            "
-          >
-            <div class="ingradient-items-vector-div">
-              <img src="../assets/apple.png" />
-            </div>
-            <div class="ingradient-items-title-div">
-              <span class="ingradient-items-title-span">BRANDING</span>
-            </div>
-            <span class="ingradient-items-content-span"
-              >Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
-              ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
-              porta. Nam condimentum vitae ligula vel ornare.</span
-            >
             <button class="ingradient-items-btn">
               <span>VIEW MORE</span>
             </button>
@@ -420,25 +228,63 @@
       </div>
     </div>
     <div id="section-fifth">
-      <div class="row no-gutters">
-        <div class="col-6 row">
-          <img src="../assets/right.png" width="53px" height="53px" />
-          <img src="../assets/lp-small.png" width="540px" height="540px" />
+      <div class="row no-gutter">
+        <div class="col-1">
+          <button
+            @click="carouselActive('left')"
+            style="background: transparent; border: none"
+          >
+            <img
+              src="../assets/right.png"
+              width="53px"
+              height="53px"
+              style="transform: rotate(180deg)"
+            />
+          </button>
         </div>
-        <div class="col-6 row">
-          <div>
-            <span class="slogan-text-highlight-green">HIGHLIGHTED SHOWCASE</span
-            ><br />
-            <span class="slogan-text-highlight-green">LP CLUB MOBILE APP</span
-            ><img class="img-reddot" src="../assets/reddot.png" /><br />
+        <div class="carousel-outer col-10">
+          <div
+            v-bind:id="'carousel-div-' + index"
+            class="carousel-div col-12"
+            v-for="(item, index) in carouselList"
+            :key="index"
+          >
+            <div class="row no-gutter">
+              <div class="col-sm-12 col-md-6 carousel-image">
+                <!-- <img
+                  :src="require('../assets/' + item.img)"
+                  style="width: 100%; height: auto; border-radius: 50px"
+                /> -->
+                <button class="viewproject-btn">
+                  <span>VIEW PROJECT</span>
+                  <hr class="white-hr" />
+                </button>
+              </div>
+              <div class="col-sm-12 col-md-6 carousel-text">
+                <div class="carousel-title-highlight-green">
+                  <span>{{ carouselActiveIndex }} / {{ item.title }}</span>
+                </div>
+                <div class="carousel-content-highlight-green">
+                  <span>{{ item.subTitle }}</span
+                  ><img
+                    class="img-reddot"
+                    src="../assets/reddot.png"
+                    width="10px"
+                    height="10px"
+                  />
+                </div>
+                <span class="section-fourth-content">{{ item.content }} </span>
+              </div>
+            </div>
           </div>
-          <span class="section-fourth-content"
-            >Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
-            ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
-            porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper
-            turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae
-            sagittis orci. Donec id dignissim nunc. </span
-          ><img src="../assets/right.png" width="53px" height="53px" />
+        </div>
+        <div class="col-1">
+          <button
+            @click="carouselActive('right')"
+            style="background: transparent; border: none"
+          >
+            <img src="../assets/right.png" width="53px" height="53px" />
+          </button>
         </div>
       </div>
     </div>
@@ -447,10 +293,107 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      ingradientList: [
+        {
+          vector: "leaf.png",
+          title: "UX Design",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
+        },
+        {
+          vector: "tomato.png",
+          title: "UI Design",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
+        },
+        {
+          vector: "cheese.png",
+          title: "website development",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
+        },
+        {
+          vector: "crumber.png",
+          title: "mobile app development",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
+        },
+        {
+          vector: "orange.png",
+          title: "ecommerce",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
+        },
+        {
+          vector: "kiwi.png",
+          title: "customer loyalty",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
+        },
+        {
+          vector: "watermelon.png",
+          title: "digital transformation",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
+        },
+        {
+          vector: "corn.png",
+          title: "digital marketing",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
+        },
+        {
+          vector: "apple.png",
+          title: "BRANDING",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
+        },
+      ],
+      carouselList: [
+        {
+          img: "lp-small.png",
+          title: "0 HIGHLIGHTED SHOWCASE",
+          subTitle: "LP CLUB MOBILE APP",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.",
+        },
+        {
+          img: "lp-small.png",
+          title: "1 HIGHLIGHTED SHOWCASE",
+          subTitle: "LP CLUB MOBILE APP",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.",
+        },
+        {
+          img: "lp-small.png",
+          title: "2 HIGHLIGHTED SHOWCASE",
+          subTitle: "LP CLUB MOBILE APP",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.",
+        },
+        {
+          img: "lp-small.png",
+          title: "3 HIGHLIGHTED SHOWCASE",
+          subTitle: "LP CLUB MOBILE APP",
+          content:
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.",
+        },
+      ],
+      carouselActiveIndex: 0,
+    };
   },
   created() {},
   mounted() {
+    // const carouselItems = document.querySelectorAll(".carousel-div");
+    // carouselItems.forEach((element, index) => {
+    // if (index === 0) {
+    //   carouselItems[index].classList.add("active");
+    // } else {
+    //   carouselItems[index].classList.add("unactive");
+    //   carouselItems[index].classList.add("none");
+    // }
+    // });
     const container = document.querySelector(".outer-div");
     const ingradientItems = document.querySelectorAll(".ingradient-items-div");
     const retangleItems = document.querySelectorAll(".retangle-row");
@@ -492,17 +435,134 @@ export default {
     ingradientItems.forEach((target) => observerIngradient.observe(target));
     retangleItems.forEach((target) => observerRetangle.observe(target));
   },
-  methods: {},
+  methods: {
+    delay(time) {
+      return new Promise((resolve) => setTimeout(resolve, time));
+    },
+    carouselActive(direct) {
+      const carouselItems = document.querySelectorAll(".carousel-div");
+      console.log("carouselItems", carouselItems);
+      if (direct === "right") {
+        // 原本的
+        const carousePre = document.querySelector(
+          "#carousel-div-" + this.carouselActiveIndex
+        );
+        this.carouselActiveIndex++;
+        const carouseNext = document.querySelector(
+          "#carousel-div-" + this.carouselActiveIndex
+        );
+        carousePre.classList.add("left");
+        carousePre.classList.remove("direct");
+        carouseNext.classList.add(direct);
+        // carouselItems.forEach((element, index) => {
+        //   carouselItems[index].classList.remove("left");
+        // });
+        // let preIndex = this.carouselActiveIndex;
+        // carouselItems[this.carouselActiveIndex].classList.add(direct);
+        // carouselItems[this.carouselActiveIndex].classList.add(
+        //   "index-" + this.carouselActiveIndex
+        // );
+        // console.log("this.carouselActiveIndex", this.carouselActiveIndex);
+        // this.carouselActiveIndex++;
+        // carouselItems[this.carouselActiveIndex].classList.add(direct);
+        // carouselItems[this.carouselActiveIndex].classList.add(
+        //   "index-" + preIndex
+        // );
+
+        // console.log("preIndex", preIndex);
+        // if (this.carouselActiveIndex === carouselItems.length) {
+        //   carouselItems[this.carouselActiveIndex].classList.add(direct);
+        //   this.carouselActiveIndex++;
+        //   carouselItems[this.carouselActiveIndex].classList.add(direct);
+        // } else {
+        //   carouselItems[this.carouselActiveIndex].classList.add(direct);
+        //   this.carouselActiveIndex++;
+        //   carouselItems[this.carouselActiveIndex].classList.add(direct);
+        // }
+      } else {
+        // carouselItems.forEach((element, index) => {
+        //   carouselItems[index].classList.remove("right");
+        // });
+        // carouselItems[this.carouselActiveIndex].classList.add(direct);
+        // this.carouselActiveIndex--;
+        // carouselItems[this.carouselActiveIndex].classList.add(direct);
+        // carouselItems[this.carouselActiveIndex].classList.add(
+        //   "index-" + this.carouselActiveIndex
+        // );
+      }
+    },
+  },
 };
 </script>
 <style>
+.carousel-outer {
+  display: flex;
+  overflow: hidden;
+}
+#carousel-div-0.left {
+  transition: transform 0.3s linear;
+  transform: translateX(-100%);
+}
+#carousel-div-1.right {
+  transition: transform 0.3s linear;
+  transform: translateX(-100%);
+}
+#carousel-div-1.left {
+  transition: transform 0.3s linear;
+  transform: translateX(-200%);
+}
+#carousel-div-2.right {
+  transition: transform 0.3s linear;
+  transform: translateX(-200%);
+}
+#carousel-div-2.left {
+  transition: transform 0.3s linear;
+  transform: translateX(-300%);
+}
+#carousel-div-3.right {
+  transition: transform 0.3s linear;
+  transform: translateX(-300%);
+}
+.carousel-div.right.index-0 {
+  transition: transform 0.3s linear;
+  transform: translateX(-100%);
+}
+.carousel-div.right.index-1 {
+  transition: transform 0.3s linear;
+  transform: translateX(-200%);
+}
+.carousel-div.right.index-2 {
+  transition: transform 0.3s linear;
+  transform: translateX(-300%);
+}
+.carousel-div.left.index-0 {
+  transition: transform 0.3s linear;
+  transform: translateX(0%);
+}
+.carousel-div.left.index-1 {
+  transition: transform 0.3s linear;
+  transform: translateX(-100%);
+}
+.carousel-div.left.index-2 {
+  transition: transform 0.3s linear;
+  transform: translateX(-200%);
+}
+#section-fifth .row {
+  padding: 100px 0;
+}
+#section-fifth .row .col-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0%;
+  margin: 0%;
+}
 .section-fourth-content {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 1px;
-
   color: #ffffff;
 }
 #section-fifth {
@@ -786,6 +846,32 @@ export default {
   border-radius: 24px;
   border: none;
 }
+.carousel-image {
+  position: relative;
+}
+.carousel-text {
+  padding: 0 7%;
+}
+.viewproject-btn {
+  position: absolute;
+  background: #26c6d0;
+  width: 300px;
+  height: 140px;
+  border: none;
+  position: absolute;
+  right: -12%;
+  top: 90%;
+}
+.viewproject-btn span {
+  position: absolute;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.22222px;
+  text-align: center;
+  color: #ffffff;
+  left: 11%;
+  top: calc(50% - 19px / 2 - 0.5px);
+}
 #viewmore-btn {
   background: #26c6d0;
   width: 223px;
@@ -887,14 +973,24 @@ export default {
     transform: scale(1, 0.025);
   }
 }
-@keyframes slide-right {
+@keyframes slide-right-to-none {
   0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+}
+@keyframes slide-left-to-none {
+  0% {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
   100% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 @keyframes fadein {
@@ -912,6 +1008,40 @@ export default {
 .retangle-animation {
   -webkit-animation: fadein 1s ease-in-out both;
   animation: fadein 1s ease-in-out both;
+}
+.carousel-title-highlight-green {
+  margin-bottom: 20px;
+}
+.carousel-title-highlight-green span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.22222px;
+  color: #ffffff;
+}
+.carousel-content-highlight-green {
+  margin-bottom: 40px;
+}
+.carousel-content-highlight-green {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 3.63636px;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.carousel-content-highlight-green span::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 8px;
+  top: 23px;
+  right: 11%;
+  background: #26c6d0;
+  width: 92%;
 }
 .slogan-text-highlight-green {
   position: relative;
