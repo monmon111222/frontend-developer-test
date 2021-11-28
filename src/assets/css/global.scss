@@ -1,0 +1,13 @@
+$n: 4;
+
+@for $i from 1 to $n {
+  .carousel-outer .carousel-div:nth-child(#{$i}) {
+    // transition: transform 0.3s linear;
+    // transform: translateX($i * (-100%));
+    background: pink;
+  }
+  //   .carousel-outer .carousel-div:nth-child(#{$i}).left {
+  //     transition: transform 0.3s linear;
+  //     transform: translateX((+1) * (-100%));
+  //   }
+}
