@@ -1,6 +1,6 @@
 <template>
   <div id="outer-div">
-    <div id="section-bg">
+    <div id="section-header">
       <iframe
         src="https://www.youtube.com/embed/8_4JRK4QkqU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=8_4JRK4QkqU"
         id="header-iframe"
@@ -8,28 +8,27 @@
         frameborder="0"
       ></iframe>
       <div id="youtube-img"></div>
-      <img id="img-logo-home" src="../assets/logo.png" />
+      <img id="logo-img-home" src="../assets/logo.png" />
       <button id="start-btn"><span>START YOUR PROJECT</span></button>
       <div class="menu-btn" @click="toggleMenu()">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+        <div class="line-btn"></div>
+        <div class="line-btn"></div>
+        <div class="line-btn"></div>
       </div>
       <div id="slogan-div">
         WE CREATE<br />
         AMAZING<br />
         <span class="slogan-text-highlight-green">DIGITAL EXPERIENCES</span
-        ><img class="img-reddot" src="../assets/reddot.png" /><br />
+        ><img class="reddot-img" src="../assets/reddot.png" /><br />
       </div>
-      <img id="img-veg" src="../assets/vegetable.png" />
-      <span class="subslogan-text">TASTE US NOW!<br /></span>
+      <img id="veg-img" src="../assets/vegetable.png" />
+      <span class="subslogan-span">TASTE US NOW!<br /></span>
       <div class="white-hr-top" />
     </div>
     <div id="section-second">
       <div>
-        <div class="white-hr-down" />
         <span class="section-title-sapn-black" style="margin-top: 40px"
-          >ABOUT DIGISALAD<img class="img-reddot" src="../assets/reddot.png"
+          >ABOUT DIGISALAD<img class="reddot-img" src="../assets/reddot.png"
         /></span>
         <img
           class="wave-hr"
@@ -37,14 +36,16 @@
           style="margin-bottom: 73px"
         />
         <iframe
-          id="img-viedo"
+          id="intro-iframe"
           src="https://www.youtube-nocookie.com/embed/IeIRJ9jZ5Ro?rel=0"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <!-- <img id="img-viedo" src="../assets/video-thumbnail.png" /> -->
-        <span id="span-description" style="margin: 30px auto"
+        <span
+          id="section-second-description-span"
+          class="section-description-span"
+          style="margin: 30px auto"
           >Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
           ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta.
           Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis.
@@ -62,7 +63,7 @@
       </div>
     </div>
     <div id="section-white">
-      <div id="white-retangle">
+      <div id="retangle-white">
         <div class="row no-gutter retangle-row">
           <div class="col-xl-4 col-lg-12">
             <div
@@ -76,7 +77,7 @@
               <span
                 class="section-title-sapn-black"
                 style="margin-bottom: 8.7px"
-                >AWARDS<img class="img-reddot" src="../assets/reddot.png"
+                >AWARDS<img class="reddot-img" src="../assets/reddot.png"
               /></span>
               <img src="../assets/green-wave-hr-short.png" />
             </div>
@@ -124,14 +125,14 @@
           >
             <span class="section-title-sapn-black" style="margin-bottom: 8.7px"
               >OUR INGRADIENTS<img
-                class="img-reddot"
+                class="reddot-img"
                 src="../assets/reddot.png"
             /></span>
             <img src="../assets/purple-wave-hr.png" />
           </div>
         </div>
         <div class="col-sm-12 row">
-          <span class="ingradient-items-content-span"
+          <span class="ingradient-items-content-span section-description-span"
             >Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras
             ullamcorper bibendum bibendum. Duis tincidunt urna non pretium
             porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper
@@ -179,11 +180,11 @@
       <div id="ingradients-viewmore-div"></div>
     </div>
     <div id="section-purple">
-      <div id="purple-retangle">
+      <div id="retangle-purple">
         <div class="row no-gutters retangle-row">
           <div
             class="col-xl-5 col-lg-12"
-            id="purple-retangle-content-left"
+            id="retangle-purple-content-left"
             style="display: flex; flex-direction: column; align-items: center"
           >
             <img
@@ -196,7 +197,7 @@
           </div>
           <div
             class="col-xl-7 col-lg-12 row justify-content-center"
-            id="purple-retangle-content-right"
+            id="retangle-purple-content-right"
             style="display: flex; flex-direction: column"
           >
             <div class="row justify-content-center" style="margin: 26px 0">
@@ -226,7 +227,7 @@
       >
         <span class="section-title-sapn-black" id="section-fourth-title"
           >OUR BRAND EXPERIENCE<img
-            class="img-reddot"
+            class="reddot-img"
             src="../assets/reddot.png"
         /></span>
         <span id="section-fourth-content"
@@ -290,7 +291,7 @@
                 <div class="carousel-content-highlight-green">
                   <span>{{ item.subTitle }}</span
                   ><img
-                    class="img-reddot"
+                    class="reddot-img"
                     src="../assets/reddot.png"
                     width="10px"
                     height="10px"
@@ -314,11 +315,11 @@
     <div id="sidemenu" v-show="onSidemenu">
       <div class="row">
         <div class="col-12 row">
-          <img id="img-logo-sidemenu" src="../assets/logo.png" />
+          <img id="logo-sidemenu-img" src="../assets/logo.png" />
           <div id="close-btn" @click="toggleMenu()"></div>
         </div>
       </div>
-      <div class="row justify-content-center" id="sidemenu-btn-row">
+      <div class="row justify-content-center" id="sidemenu-outer-div">
         <div class="col-sm">
           <div id="sidemenu-aboutus">
             <div>
@@ -328,7 +329,7 @@
                 <div>
                   <span>ABOUT US</span
                   ><img
-                    class="img-reddot"
+                    class="reddot-img"
                     src="../assets/reddot.png"
                     width="10px"
                     height="10px"
@@ -345,7 +346,7 @@
                 <div>
                   <span>WORKS</span
                   ><img
-                    class="img-reddot"
+                    class="reddot-img"
                     src="../assets/reddot.png"
                     width="10px"
                     height="10px"
@@ -367,7 +368,7 @@
                 <div>
                   <span>CAREERS</span
                   ><img
-                    class="img-reddot"
+                    class="reddot-img"
                     src="../assets/reddot.png"
                     width="10px"
                     height="10px"
@@ -387,7 +388,7 @@
                 <div>
                   <span>INSIGHTS</span
                   ><img
-                    class="img-reddot"
+                    class="reddot-img"
                     src="../assets/reddot.png"
                     width="10px"
                     height="10px"
@@ -406,7 +407,7 @@
                 <div>
                   <span>SERVICES</span
                   ><img
-                    class="img-reddot"
+                    class="reddot-img"
                     src="../assets/reddot.png"
                     width="10px"
                     height="10px"
@@ -424,7 +425,7 @@
                 <div>
                   <span style="color: #26c6d0 !important">CONTACT</span
                   ><img
-                    class="img-reddot"
+                    class="reddot-img"
                     src="../assets/reddot.png"
                     width="10px"
                     height="10px"
@@ -445,221 +446,370 @@ export default {
       onSidemenu: false,
       ingradientList: [
         {
-          vector: 'leaf.png',
-          title: 'UX Design',
+          vector: "leaf.png",
+          title: "UX Design",
           content:
-            'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.',
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          vector: 'tomato.png',
-          title: 'UI Design',
+          vector: "tomato.png",
+          title: "UI Design",
           content:
-            'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.',
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          vector: 'cheese.png',
-          title: 'website development',
+          vector: "cheese.png",
+          title: "website development",
           content:
-            'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.',
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          vector: 'crumber.png',
-          title: 'mobile app development',
+          vector: "crumber.png",
+          title: "mobile app development",
           content:
-            'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.',
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          vector: 'orange.png',
-          title: 'ecommerce',
+          vector: "orange.png",
+          title: "ecommerce",
           content:
-            'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.',
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          vector: 'kiwi.png',
-          title: 'customer loyalty',
+          vector: "kiwi.png",
+          title: "customer loyalty",
           content:
-            'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.',
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          vector: 'watermelon.png',
-          title: 'digital transformation',
+          vector: "watermelon.png",
+          title: "digital transformation",
           content:
-            'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.',
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          vector: 'corn.png',
-          title: 'digital marketing',
+          vector: "corn.png",
+          title: "digital marketing",
           content:
-            'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.',
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
         },
         {
-          vector: 'apple.png',
-          title: 'BRANDING',
+          vector: "apple.png",
+          title: "BRANDING",
           content:
-            'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.',
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Crasullamcorper bibendum bibendum. Duis tincidunt urna non pretiumporta. Nam condimentum vitae ligula vel ornare.",
         },
       ],
       carouselList: [
         {
-          img: 'lp-small.png',
-          title: 'HIGHLIGHTED SHOWCASE',
-          subTitle: 'LP CLUB MOBILE APP',
+          img: "lp-small.png",
+          title: "HIGHLIGHTED SHOWCASE",
+          subTitle: "LP CLUB MOBILE APP",
           content:
-            'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.',
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.",
         },
         {
-          img: 'lp-small.png',
-          title: 'HIGHLIGHTED SHOWCASE',
-          subTitle: 'LP CLUB MOBILE APP',
+          img: "lp-small.png",
+          title: "HIGHLIGHTED SHOWCASE",
+          subTitle: "LP CLUB MOBILE APP",
           content:
-            'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.',
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.",
         },
         {
-          img: 'lp-small.png',
-          title: 'HIGHLIGHTED SHOWCASE',
-          subTitle: 'LP CLUB MOBILE APP',
+          img: "lp-small.png",
+          title: "HIGHLIGHTED SHOWCASE",
+          subTitle: "LP CLUB MOBILE APP",
           content:
-            'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.',
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.",
         },
         {
-          img: 'lp-small.png',
-          title: 'HIGHLIGHTED SHOWCASE',
-          subTitle: 'LP CLUB MOBILE APP',
+          img: "lp-small.png",
+          title: "HIGHLIGHTED SHOWCASE",
+          subTitle: "LP CLUB MOBILE APP",
           content:
-            'Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.',
+            "Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.",
         },
       ],
       carouselActiveIndex: 0,
-    }
+    };
   },
   created() {},
   mounted() {
-    const container = document.querySelector('.outer-div')
-    const ingradientItems = document.querySelectorAll('.ingradient-items-div')
-    const retangleItems = document.querySelectorAll('.retangle-row')
-    const sloganItem = document.querySelector('#slogan-div')
-    const logoItem = document.querySelector('#img-logo-home')
+    const container = document.querySelector(".outer-div");
+    const ingradientItems = document.querySelectorAll(".ingradient-items-div");
+    const retangleItems = document.querySelectorAll(".retangle-row");
+    const sloganItem = document.querySelector("#slogan-div");
+    const logoItem = document.querySelector("#logo-img-home");
+    const itroIframeItem = document.querySelector("#intro-iframe");
+    const clientListimgItem = document.querySelector("#client-list-img");
+    const sectionDescriptionItems = document.querySelectorAll(
+      ".section-description-span"
+    );
     const options = {
       root: container,
-      rootMargin: '100px',
+      rootMargin: "100px",
       threshold: 0,
-    }
+    };
 
     let callbackIngradient = (entries) => {
-      let delay = 0
+      let delay = 0;
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setTimeout(() => {
-            entry.target.classList.add('vector-animation')
-          }, delay)
+            entry.target.classList.add("vector-animation");
+          }, delay);
         }
-        delay += 80
-      })
-    }
+        delay += 80;
+      });
+    };
 
     let callbackRetangle = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('retangle-animation')
+          entry.target.classList.add("retangle-animation");
         }
-      })
-    }
+      });
+    };
 
     let callbackSlogan = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('slogan-animation')
+          entry.target.classList.add("slogan-animation");
         }
-      })
-    }
+      });
+    };
     let callbackLogo = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('logo-animation')
+          entry.target.classList.add("logo-animation");
         }
-      })
-    }
+      });
+    };
+    let callbackIntroIframe = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("intro-iframe-animation");
+        }
+      });
+    };
+    let callbackSectionDescription = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("intro-iframe-animation");
+        }
+      });
+    };
+    let callbackClientListImg = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("img-animation");
+        }
+      });
+    };
     const observerIngradient = new IntersectionObserver(
       callbackIngradient,
       options
-    )
-    const observerRetangle = new IntersectionObserver(callbackRetangle, options)
-    const observerSlogan = new IntersectionObserver(callbackSlogan, options)
-    const observerLogo = new IntersectionObserver(callbackLogo, options)
-    observerSlogan.observe(sloganItem)
-    observerLogo.observe(logoItem)
-    ingradientItems.forEach((target) => observerIngradient.observe(target))
-    retangleItems.forEach((target) => observerRetangle.observe(target))
+    );
+    const observerRetangle = new IntersectionObserver(
+      callbackRetangle,
+      options
+    );
+
+    const observerSlogan = new IntersectionObserver(callbackSlogan, options);
+    const observerLogo = new IntersectionObserver(callbackLogo, options);
+    const observerIntroIframe = new IntersectionObserver(
+      callbackIntroIframe,
+      options
+    );
+    const observerSectionDescription = new IntersectionObserver(
+      callbackSectionDescription,
+      options
+    );
+    const observerClientListImg = new IntersectionObserver(
+      callbackClientListImg,
+      options
+    );
+    observerSlogan.observe(sloganItem);
+    observerLogo.observe(logoItem);
+    observerIntroIframe.observe(itroIframeItem);
+    sectionDescriptionItems.forEach((target) =>
+      observerSectionDescription.observe(target)
+    );
+    observerClientListImg.observe(clientListimgItem);
+    ingradientItems.forEach((target) => observerIngradient.observe(target));
+    retangleItems.forEach((target) => observerRetangle.observe(target));
   },
   methods: {
     toggleMenu() {
-      const menuBtn = document.querySelector('.menu-btn')
-      const sideMenu = document.querySelector('#sidemenu')
+      const menuBtn = document.querySelector(".menu-btn");
+      const sideMenu = document.querySelector("#sidemenu");
       if (!this.onSidemenu) {
-        menuBtn.classList.add('active')
-        sideMenu.classList.remove('close')
-        sideMenu.classList.add('open')
-        this.onSidemenu = true
+        menuBtn.classList.add("active");
+        sideMenu.classList.remove("close");
+        sideMenu.classList.add("open");
+        this.onSidemenu = true;
       } else {
-        sideMenu.classList.remove('open')
-        sideMenu.classList.add('close')
-        menuBtn.classList.remove('active')
+        sideMenu.classList.remove("open");
+        sideMenu.classList.add("close");
+        menuBtn.classList.remove("active");
         setTimeout(() => {
-          this.onSidemenu = false
-        }, 1500)
+          this.onSidemenu = false;
+        }, 1500);
       }
     },
     carouselActive(direct) {
-      const carouselItems = document.querySelectorAll('.carousel-div')
-      console.log('carouselItems', carouselItems)
-      if (direct === 'right') {
+      const carouselItems = document.querySelectorAll(".carousel-div");
+      console.log("carouselItems", carouselItems);
+      if (direct === "right") {
         // 原本的
         const carousePre = document.querySelector(
-          '#carousel-div-' + this.carouselActiveIndex
-        )
-        this.carouselActiveIndex++
+          "#carousel-div-" + this.carouselActiveIndex
+        );
+        this.carouselActiveIndex++;
         const carouseNext = document.querySelector(
-          '#carousel-div-' + this.carouselActiveIndex
-        )
-        carousePre.classList.remove('right-to-show')
-        carousePre.classList.remove('left-to-show')
-        carouseNext.classList.remove('right-to-none')
-        carousePre.classList.add('left-to-none')
-        carouseNext.classList.add('left-to-show')
+          "#carousel-div-" + this.carouselActiveIndex
+        );
+        carousePre.classList.remove("right-to-show");
+        carousePre.classList.remove("left-to-show");
+        carouseNext.classList.remove("right-to-none");
+        carousePre.classList.add("left-to-none");
+        carouseNext.classList.add("left-to-show");
       } else {
         const carouseNext = document.querySelector(
-          '#carousel-div-' + this.carouselActiveIndex
-        )
-        this.carouselActiveIndex--
+          "#carousel-div-" + this.carouselActiveIndex
+        );
+        this.carouselActiveIndex--;
         const carousePre = document.querySelector(
-          '#carousel-div-' + this.carouselActiveIndex
-        )
-        carousePre.classList.remove('left-to-none')
-        carousePre.classList.add('right-to-show')
-        carouseNext.classList.remove('left-to-show')
-        carouseNext.classList.add('right-to-none')
+          "#carousel-div-" + this.carouselActiveIndex
+        );
+        carousePre.classList.remove("left-to-none");
+        carousePre.classList.add("right-to-show");
+        carouseNext.classList.remove("left-to-show");
+        carouseNext.classList.add("right-to-none");
       }
     },
   },
-}
+};
 </script>
 <style lang="scss">
-@media (min-aspect-ratio: 16/9) {
-  #header-iframe {
-    // height: 56.25vw;
+#outer-div {
+  background: #e5e5e5;
+  overflow-x: hidden;
+}
+#youtube-img {
+  position: absolute;
+  width: 100vw;
+  aspect-ratio: 1440/810;
+  height: auto;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+#section-header {
+  // border-radius: 0 0 50px 50px;
+  // background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  //   url('../assets/BG.png');
+  // background-size: cover;
+  height: auto;
+  left: 0px;
+  top: 0px;
+  position: relative;
+  width: 100vw;
+  aspect-ratio: 1440/810;
+}
+#sidemenu-btn {
+  position: absolute;
+  left: 93.75%;
+  right: 4.17%;
+  top: 4.98%;
+  bottom: 92.88%;
+  width: 30px;
+  height: 22px;
+  border: none;
+  background: transparent;
+  & div div:not(:nth-child(3)) {
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    margin-bottom: 7px;
+  }
+  & div div:nth-child(3) {
+    width: 26px;
+    height: 3px;
+    background: #ffffff;
+    margin-left: 4px;
   }
 }
-@media (max-aspect-ratio: 16/9) {
-  #header-iframe {
-    // width: 177.78vh;
+#sidemenu-btn:focus,
+#start-btn:focus,
+#viewmore-btn:focus,
+.ingradient-items-btn:focus,
+.viewproject-btn:focus,
+#close-btn:focus {
+  outline: none;
+}
+#start-btn {
+  position: absolute;
+  /* left: 76.81%; */
+  right: 9.31%;
+  top: 4%;
+  bottom: 92%;
+  background: linear-gradient(90deg, #4ee5ea 3.94%, #26d0a8 94.73%);
+  border-radius: 24px;
+  border: none;
+  & span {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 1.14286px;
+    color: #ffffff;
+    margin: 13px 9px 12px 11px;
   }
+}
+#veg-img {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  top: 76%;
+}
+.subslogan-span {
+  position: absolute;
+  width: 129px;
+  height: 17px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  top: 88%;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+#logo-img-home {
+  position: absolute;
+  width: 198.71px;
+  height: 88px;
+  left: 15.69%;
+  top: 17.8%;
+}
+#logo-sidemenu-img {
+  margin-left: 60px;
+  margin-top: 47px;
+}
+#slogan-div {
+  position: absolute;
+  left: 15.69%;
+  top: 34.56%;
+  font-size: 38px;
+  line-height: 70px;
+  letter-spacing: 9.16667px;
+  color: #ffffff;
 }
 #header-iframe {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 100vw;
-  // height: 940px;
   height: 100%;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -673,39 +823,33 @@ export default {
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
-
-/* Styling the hamburger lines */
-.menu-btn .btn-line:not(:nth-child(3)) {
+.menu-btn .line-btn:not(:nth-child(3)) {
   width: 30px;
   height: 3px;
   margin: 0 0 7px 0;
   background: #ffffff;
   transition: all 0.5s ease-out;
 }
-.menu-btn .btn-line:nth-child(3) {
+.menu-btn .line-btn:nth-child(3) {
   width: 26px;
   height: 3px;
   margin: 0 0 7px 4px;
   background: #ffffff;
   transition: all 0.5s ease-out;
 }
-/* Adding transform to the X */
 .menu-btn.active {
   transform: rotate(180deg);
 }
-
-/* Styling the three lines to make it an X */
-.menu-btn.active .btn-line:nth-child(1) {
+.menu-btn.active .line-btn:nth-child(1) {
   transform: rotate(45deg) translate(9px, 5px);
 }
-
-.menu-btn.active .btn-line:nth-child(2) {
+.menu-btn.active .line-btn:nth-child(2) {
   opacity: 0;
 }
-
-.menu-btn.active .btn-line:nth-child(3) {
+.menu-btn.active .line-btn:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -6px) scale(1.15);
 }
+// 側邊選單 小字 大字
 .sidemenu-btn-text {
   display: flex;
   flex-direction: column;
@@ -726,7 +870,8 @@ export default {
     color: #ffffff;
   }
 }
-#sidemenu-btn-row {
+// 側邊選單 按鈕排列
+#sidemenu-outer-div {
   > div:nth-child(1) {
     display: flex;
     flex-direction: column;
@@ -751,7 +896,7 @@ export default {
   height: 210px;
   margin-bottom: 35px;
   border-radius: 30px;
-  background-image: url('../assets/aboutus-bg.png'),
+  background-image: url("../assets/aboutus-bg.png"),
     linear-gradient(0deg, #26c6d0e6, #26c6d0e6);
 }
 #sidemenu-aboutus > div {
@@ -764,7 +909,7 @@ export default {
   width: 380px;
   height: 320px;
   border-radius: 30px;
-  background-image: url('../assets/works-bg.png'),
+  background-image: url("../assets/works-bg.png"),
     linear-gradient(0deg, #ee6c8ae6, #ee6c8ae6);
 }
 #sidemenu-works > div {
@@ -778,7 +923,7 @@ export default {
   height: 430px;
   margin-bottom: 35px;
   border-radius: 30px;
-  background-image: url('../assets/careers-bg.png'),
+  background-image: url("../assets/careers-bg.png"),
     linear-gradient(0deg, #e6a94ee6, #e6a94ee6);
 }
 #sidemenu-careers > div {
@@ -793,7 +938,7 @@ export default {
   height: 282px;
   margin-bottom: 35px;
   border-radius: 30px;
-  background-image: url('../assets/insights-bg.png'),
+  background-image: url("../assets/insights-bg.png"),
     linear-gradient(0deg, #26d0a8e6, #26d0a8e6);
 }
 #sidemenu-insights > div {
@@ -808,7 +953,7 @@ export default {
   height: 320px;
   margin-bottom: 35px;
   border-radius: 30px;
-  background-image: url('../assets/services-bg.png'),
+  background-image: url("../assets/services-bg.png"),
     linear-gradient(0deg, #585880e6, #585880e6);
 }
 #sidemenu-services > div {
@@ -821,7 +966,7 @@ export default {
   width: 380px;
   height: 210px;
   border-radius: 30px;
-  background-image: url('../assets/contact-bg.png');
+  background-image: url("../assets/contact-bg.png");
 }
 #sidemenu-contact > div {
   display: flex;
@@ -836,17 +981,17 @@ export default {
   font-size: 0;
   margin: auto 64px auto auto;
   transform: rotate(45deg);
-}
-#close-btn:hover {
-  cursor: pointer;
-}
-#close-btn::after {
-  content: '/';
-  display: block;
-  width: 22px;
-  height: 3px;
-  background: #ffffff;
-  transform: rotate(-90deg);
+  &:hover {
+    cursor: pointer;
+  }
+  &::after {
+    content: "/";
+    display: block;
+    width: 22px;
+    height: 3px;
+    background: #ffffff;
+    transform: rotate(-90deg);
+  }
 }
 #sidemenu {
   position: absolute;
@@ -854,16 +999,16 @@ export default {
   left: 0;
   z-index: 100;
   width: 100%;
-  background-image: url('../assets/Rectangle.png'), url('../assets/BG.png');
+  background-image: url("../assets/Rectangle.png"), url("../assets/BG.png");
   background-repeat: no-repeat;
-}
-#sidemenu.open {
-  -webkit-animation: sidemenu-open 1.5s ease-in-out both;
-  animation: sidemenu-open 1.5s ease-in-out both;
-}
-#sidemenu.close {
-  -webkit-animation: sidemenu-close 1.5s ease-in-out;
-  animation: sidemenu-close 1.5s ease-in-out;
+  &.open {
+    -webkit-animation: sidemenu-open 1.5s ease-in-out both;
+    animation: sidemenu-open 1.5s ease-in-out both;
+  }
+  &.close {
+    -webkit-animation: sidemenu-close 1.5s ease-in-out;
+    animation: sidemenu-close 1.5s ease-in-out;
+  }
 }
 @keyframes sidemenu-open {
   0% {
@@ -886,145 +1031,6 @@ export default {
     width: 0%;
     opacity: 0;
   }
-}
-#carousel-index {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: 50px;
-  height: 50px;
-  box-sizing: border-box;
-  background: linear-gradient(
-    135deg,
-    transparent 49.5%,
-    #26c6d0 49.5%,
-    #26c6d0 50.5%,
-    transparent 50.5%
-  );
-}
-#carousel-index span:nth-child(1) {
-  margin: 0 auto auto 0;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.22222px;
-  color: #ffffff;
-}
-#carousel-index span:nth-child(2) {
-  margin: auto 0 0 auto;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.22222px;
-  color: #ffffff;
-}
-#carousel-index span::before {
-  content: '0';
-}
-$n: 5;
-@for $i from 1 to $n {
-  .carousel-outer .carousel-div:nth-child(#{$i}).right-to-show {
-    transition: transform 0.3s linear;
-    transform: translateX(($i - 1) * (-100%));
-    background: pink;
-  }
-  .carousel-outer .carousel-div:nth-child(#{$i}).right-to-none {
-    transition: transform 0.3s linear;
-    transform: translateX(($i + 1) * (100%));
-  }
-  .carousel-outer .carousel-div:nth-child(#{$i}).left-to-show {
-    transition: transform 0.3s linear;
-    transform: translateX(($i - 1) * (-100%));
-    background: blue;
-  }
-  .carousel-outer .carousel-div:nth-child(#{$i}).left-to-none {
-    transition: transform 0.3s linear;
-    transform: translateX(($i + 1) * (-100%));
-  }
-}
-.carousel-outer {
-  display: flex;
-  overflow: hidden;
-}
-#section-fifth-row {
-  padding: 100px 0;
-}
-.carousel-div .row {
-  padding-bottom: 100px;
-}
-#section-fifth .row .col-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0%;
-  margin: 0%;
-}
-.section-fourth-content {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 1px;
-  color: #ffffff;
-}
-#section-fifth {
-  background: url('../assets/lp-bg.png');
-  background-size: cover;
-  /* border-radius: 0 0 50px; */
-}
-#section-fourth-content {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 1px;
-  color: #262626;
-}
-#section-fourth-title {
-  position: relative;
-  z-index: 1;
-  margin-top: 6%;
-  margin-bottom: 5%;
-}
-#section-fourth-title::before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  height: 13px;
-  top: 105%;
-  left: -8%;
-  background: url(../assets/green-wave-hr-long.png);
-  width: 115%;
-}
-.ingradient-items-btn {
-  border-radius: 50px;
-  border: #ffffff 1px solid;
-  background: transparent;
-  padding: 20px 0;
-  margin: 20px auto auto auto;
-}
-.ingradient-items-btn:hover {
-  background: #ffffff;
-}
-.ingradient-items-btn span {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 2.22222px;
-  color: #ffffff;
-  margin: 20px 35px;
-}
-.ingradient-items-btn:hover span {
-  color: #26c6d0;
-}
-#section-white {
-  background: linear-gradient(180deg, #e5e5e5 60%, #26c6d0 60%);
-}
-#section-purple {
-  background: linear-gradient(180deg, #26c6d0 40%, #ffffff 40%);
 }
 .ingradient-items-title-div {
   height: 48px;
@@ -1058,19 +1064,40 @@ $n: 5;
   justify-content: center;
   align-items: center;
   margin: 60px auto auto auto;
-}
-.ingradient-items-vector-div:not(:nth-child(3)) img {
-  width: auto;
-  height: 68px;
-}
-.ingradient-items-vector-div:hover {
-  transform: scale(1.2);
+  &:not(:nth-child(3)) img {
+    width: auto;
+    height: 68px;
+  }
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 .ingradient-items-div {
   width: 369px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.ingradient-items-btn {
+  border-radius: 50px;
+  border: #ffffff 1px solid;
+  background: transparent;
+  padding: 20px 0;
+  margin: 20px auto auto auto;
+  &:hover {
+    background: #ffffff;
+  }
+  & span {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.22222px;
+    color: #ffffff;
+    margin: 20px 35px;
+  }
+  &:hover span {
+    color: #26c6d0;
+  }
 }
 /* cheese vetor */
 .container-animation
@@ -1080,7 +1107,7 @@ $n: 5;
   width: 68px;
   height: auto;
 }
-#span-description {
+#section-second-description-span {
   font-size: 16px;
   line-height: 28px;
   text-align: center;
@@ -1092,7 +1119,7 @@ $n: 5;
   height: 13px;
   width: 369px;
 }
-#img-viedo {
+#intro-iframe {
   width: 66.7%;
   height: 37vw;
 }
@@ -1102,6 +1129,7 @@ $n: 5;
   flex-direction: column;
   align-items: center;
   position: relative;
+  margin-top: 40px;
 }
 #section-third {
   background: #26c6d0;
@@ -1114,7 +1142,49 @@ $n: 5;
   position: relative;
   background: #ffffff;
 }
-#white-retangle {
+.section-fourth-content {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+#section-fourth-title {
+  position: relative;
+  z-index: 1;
+  margin-top: 6%;
+  margin-bottom: 5%;
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 13px;
+    top: 105%;
+    left: -8%;
+    background: url(../assets/green-wave-hr-long.png);
+    width: 115%;
+  }
+}
+#section-fifth {
+  background: url("../assets/lp-bg.png");
+  background-size: cover;
+  & .row .col-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    margin: 0%;
+  }
+}
+#section-white {
+  background: linear-gradient(180deg, #e5e5e5 60%, #26c6d0 60%);
+}
+#section-purple {
+  background: linear-gradient(180deg, #26c6d0 40%, #ffffff 40%);
+}
+#retangle-white {
   background: #ffffff;
   width: 93%;
   border-radius: 50px 0 50px 50px;
@@ -1124,27 +1194,27 @@ $n: 5;
   height: 30%;
   position: relative;
   z-index: 1;
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 10%;
+    top: 50%;
+    left: -8%;
+    background: #26c6d0;
+    width: 8%;
+    border-top-left-radius: 50px;
+  }
+  & .section-title-sapn-black {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 3.63636px;
+    color: #262626;
+    text-align: center;
+  }
 }
-#white-retangle::before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  height: 10%;
-  top: 50%;
-  left: -8%;
-  background: #26c6d0;
-  width: 8%;
-  border-top-left-radius: 50px;
-}
-#white-retangle .section-title-sapn-black {
-  font-size: 28px;
-  line-height: 34px;
-  letter-spacing: 3.63636px;
-  color: #262626;
-  text-align: center;
-}
-#purple-retangle {
-  background-image: url('../assets/purple-bg.png');
+#retangle-purple {
+  background-image: url("../assets/purple-bg.png");
   background-size: cover;
   width: 90.2%;
   border-radius: 0 50px 50px 50px;
@@ -1153,53 +1223,55 @@ $n: 5;
   padding: 100px 65px;
   position: relative;
   z-index: 1;
+  &::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 10%;
+    top: 40%;
+    right: -11%;
+    background: #26c6d0;
+    width: 11%;
+    border-bottom-right-radius: 50px;
+  }
 }
-#purple-retangle::after {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  height: 10%;
-  top: 40%;
-  right: -11%;
-  background: #26c6d0;
-  width: 11%;
-  border-bottom-right-radius: 50px;
+#retangle-purple-content-left {
+  & span:nth-child(2) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  & span:nth-child(3) {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #ffffff;
+  }
 }
-#purple-retangle-content-left span:nth-child(2) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 8px;
-}
-#purple-retangle-content-left span:nth-child(3) {
-  font-style: italic;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 2px;
-  color: #ffffff;
-}
-#purple-retangle-content-right span {
+#retangle-purple-content-right span {
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 48px;
   letter-spacing: 2px;
   color: #ffffff;
-}
-#purple-retangle-content-right span span {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 48px;
-  letter-spacing: 2px;
-  color: #ffbc58;
+  & span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    color: #ffbc58;
+  }
 }
 .section-title-sapn-black {
   font-size: 28px;
@@ -1208,91 +1280,93 @@ $n: 5;
   color: #262626;
   text-align: center;
 }
-.img-reddot {
+.reddot-img {
   margin-left: 11px;
 }
-#white-hr-45deg {
+.white-hr {
+  position: absolute;
+  width: 52px;
+  left: 65.67%;
+  right: 11%;
+  top: 49.29%;
+  bottom: 49.29%;
+  margin: 0;
+  border: 0;
   height: 2px;
-  transform: rotate(45deg);
+  background: #ffffff;
 }
 .white-hr-top {
   position: absolute;
   border-left: 1px solid #ffffff;
-  height: 45px !important;
+  height: 86px !important;
   left: 50%;
   top: 95.2%;
   transform: translate(-50%, 0%);
 }
-.white-hr-down {
-  position: absolute;
-  border-left: 1px solid #ffffff;
-  height: 86px !important;
-  top: 0%;
-  transform: translate(-50%, 0%);
-}
-#outer-div {
-  background: #e5e5e5;
-}
-#youtube-img {
-  position: absolute;
-  width: 100vw;
-  aspect-ratio: 1440/810;
-  height: auto;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-}
-#section-bg {
-  // border-radius: 0 0 50px 50px;
-  // background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  //   url('../assets/BG.png');
-  // background-size: cover;
-
-  height: auto;
-  left: 0px;
-  top: 0px;
+#carousel-index {
   position: relative;
-  width: 100vw;
-  aspect-ratio: 1440/810;
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    135deg,
+    transparent 49.5%,
+    #26c6d0 49.5%,
+    #26c6d0 50.5%,
+    transparent 50.5%
+  );
+  & span::before {
+    content: "0";
+  }
+  & span:nth-child(1) {
+    margin: 0 auto auto 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.22222px;
+    color: #ffffff;
+  }
+  & span:nth-child(2) {
+    margin: auto 0 0 auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.22222px;
+    color: #ffffff;
+  }
 }
-#sidemenu-btn {
-  position: absolute;
-  left: 93.75%;
-  right: 4.17%;
-  top: 4.98%;
-  bottom: 92.88%;
-  width: 30px;
-  height: 22px;
-  border: none;
-  background: transparent;
+$n: 5;
+@for $i from 1 to $n {
+  .carousel-outer .carousel-div:nth-child(#{$i}).right-to-show {
+    transition: transform 0.3s linear;
+    transform: translateX(($i - 1) * (-100%));
+  }
+  .carousel-outer .carousel-div:nth-child(#{$i}).right-to-none {
+    transition: transform 0.3s linear;
+    transform: translateX(($i + 1) * (100%));
+  }
+  .carousel-outer .carousel-div:nth-child(#{$i}).left-to-show {
+    transition: transform 0.3s linear;
+    transform: translateX(($i - 1) * (-100%));
+  }
+  .carousel-outer .carousel-div:nth-child(#{$i}).left-to-none {
+    transition: transform 0.3s linear;
+    transform: translateX(($i + 1) * (-100%));
+  }
 }
-#sidemenu-btn:focus,
-#start-btn:focus,
-#viewmore-btn:focus,
-.ingradient-items-btn:focus,
-.viewproject-btn:focus,
-#close-btn:focus {
-  outline: none;
+#section-fifth-row {
+  padding: 100px 0;
 }
-#sidemenu-btn div div:not(:nth-child(3)) {
-  width: 30px;
-  height: 3px;
-  background: #ffffff;
-  margin-bottom: 7px;
+.carousel-outer {
+  display: flex;
+  overflow: hidden;
 }
-#sidemenu-btn div div:nth-child(3) {
-  width: 26px;
-  height: 3px;
-  background: #ffffff;
-  margin-left: 4px;
-}
-#start-btn {
-  position: absolute;
-  /* left: 76.81%; */
-  right: 9.31%;
-  top: 4%;
-  bottom: 92%;
-  background: linear-gradient(90deg, #4ee5ea 3.94%, #26d0a8 94.73%);
-  border-radius: 24px;
-  border: none;
+.carousel-div .row {
+  padding-bottom: 100px;
 }
 .carousel-image {
   position: relative;
@@ -1309,16 +1383,16 @@ $n: 5;
   position: absolute;
   right: -12%;
   top: 90%;
-}
-.viewproject-btn span {
-  position: absolute;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.22222px;
-  text-align: center;
-  color: #ffffff;
-  left: 11%;
-  top: calc(50% - 19px / 2 - 0.5px);
+  & span {
+    position: absolute;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.22222px;
+    text-align: center;
+    color: #ffffff;
+    left: 11%;
+    top: calc(50% - 19px / 2 - 0.5px);
+  }
 }
 #viewmore-btn {
   background: #26c6d0;
@@ -1326,93 +1400,27 @@ $n: 5;
   height: 86px;
   border: none;
   position: relative;
+  span {
+    position: absolute;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.22222px;
+    text-align: center;
+    color: #ffffff;
+    left: 11%;
+    top: calc(50% - 19px / 2 - 0.5px);
+  }
 }
-#viewmore-btn span {
-  position: absolute;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.22222px;
-  text-align: center;
-  color: #ffffff;
-  left: 11%;
-  top: calc(50% - 19px / 2 - 0.5px);
-}
-.white-hr {
-  position: absolute;
-  width: 52px;
-  left: 65.67%;
-  right: 11%;
-  top: 49.29%;
-  bottom: 49.29%;
-  margin: 0;
-  border: 0;
-  height: 2px;
-  background: #ffffff;
-}
-#start-btn span {
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  letter-spacing: 1.14286px;
-  color: #ffffff;
-  margin: 13px 9px 12px 11px;
-}
-#img-veg {
-  position: absolute;
-  width: 65px;
-  height: 65px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  top: 76%;
-}
-.subslogan-text {
-  position: absolute;
-  width: 129px;
-  height: 17px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  top: 88%;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-#img-logo-home {
-  position: absolute;
-  width: 198.71px;
-  height: 88px;
-  left: 15.69%;
-  top: 17.8%;
-}
-#img-logo-sidemenu {
-  margin-left: 60px;
-  margin-top: 47px;
-}
-#slogan-div {
-  position: absolute;
-  left: 15.69%;
-  top: 34.56%;
-  font-size: 38px;
-  line-height: 70px;
-  letter-spacing: 9.16667px;
-  color: #ffffff;
-}
-
-.target-element {
-  width: 100px;
-  height: 100px;
-  background: orange;
-  margin: 450px auto;
-}
-@keyframes rotate-center {
+@keyframes slide-down {
   0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
+    -webkit-transform: translateZ(0) translateY(-100px);
+    transform: translateZ(0) translateY(-100px);
+    opacity: 0;
   }
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -webkit-transform: translateZ(160px) translateY(0px);
+    transform: translateZ(160px) translateY(0px);
+    opacity: 1;
   }
 }
 @keyframes wipe-enter {
@@ -1477,6 +1485,14 @@ $n: 5;
     left: 15.69%;
   }
 }
+.img-animation {
+  -webkit-animation: slide-down 1.5s ease-in-out both;
+  animation: slide-down 1.5s ease-in-out both;
+}
+.intro-iframe-animation {
+  -webkit-animation: fade-in 2s ease-in-out both;
+  animation: fade-in 2s ease-in-out both;
+}
 .logo-animation {
   -webkit-animation: drop-left-down 1.5s ease-in 1;
   animation: drop-left-down 1.5s ease-in 1;
@@ -1490,24 +1506,22 @@ $n: 5;
   animation: wipe-enter 2s ease-in 1;
 }
 .retangle-animation {
-  -webkit-animation: fade-in 1s ease-in-out both;
-  animation: fade-in 1s ease-in-out both;
+  -webkit-animation: fade-in 2s ease-in-out both;
+  animation: fade-in 2s ease-in-out both;
 }
 .carousel-title-highlight-green {
   margin-bottom: 20px;
-}
-.carousel-title-highlight-green span {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.22222px;
-  color: #ffffff;
+  & span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.22222px;
+    color: #ffffff;
+  }
 }
 .carousel-content-highlight-green {
   margin-bottom: 40px;
-}
-.carousel-content-highlight-green {
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -1516,32 +1530,31 @@ $n: 5;
   color: #ffffff;
   position: relative;
   z-index: 1;
-}
-.carousel-content-highlight-green span::before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  height: 8px;
-  top: 23px;
-  right: 11%;
-  background: #26c6d0;
-  width: 92%;
-}
+  & span::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 8px;
+    top: 23px;
+    right: 11%;
+    background: #26c6d0;
+    width: 92%;
+  }
+} /* 標語-強調 */
 .slogan-text-highlight-green {
   position: relative;
   z-index: 1;
-}
-/* 標語-強調 */
-.slogan-text-highlight-green::before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  height: 8px;
-  top: 38px;
-  right: 0%;
-  background: #26c6d0;
-  width: 103%;
-  opacity: 0.8;
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 8px;
+    top: 38px;
+    right: 0%;
+    background: #26c6d0;
+    width: 103%;
+    opacity: 0.8;
+  }
 }
 .ingradients-viewmore-highlight-yellow {
   font-style: normal;
@@ -1554,16 +1567,15 @@ $n: 5;
   position: relative;
   z-index: 1;
   margin: 102px 0 129px 0;
-}
-/* 標語-強調 */
-.ingradients-viewmore-highlight-yellow::before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  height: 10px;
-  top: 12px;
-  right: -2%;
-  background: #ffbc58;
-  width: 104%;
+  &::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    height: 10px;
+    top: 12px;
+    right: -2%;
+    background: #ffbc58;
+    width: 104%;
+  }
 }
 </style>
